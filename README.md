@@ -9,15 +9,15 @@ In order to use the test widgets, the forms need to be filled in:
 ___
 
 Donations:
-![Donations: ](https://github.com/rafalf/blog/blob/master/ammado_donat.png "")
+![Donations: ](ammado/ammado_donat.png "")
 
 
 ___
 
 Fundraising:
-![Fundraising: ](https://github.com/rafalf/blog/blob/master/ammado_fundr.png "")
+![Fundraising: ](ammado/ammado_fundr.png "")
 
 ___
 
 Gift card:
-![Gift card: ](https://github.com/rafalf/blog/blob/master/ammado_gift_card.png "")
+![Gift card: ](ammado/ammado_gift_card.png "")

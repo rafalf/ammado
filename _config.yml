@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: "ammado widgets"
+description: "Test site for ammado widgets"
+keywords: "widgets, test"
+baseurl: "/blog"
+#url: "/blog"
+#url: "http://127.0.0.1:4000"
+
+# blog img path
+img_path: '/static/img/blog'
+
+# author
+author:
+  name: 'ammado'
+  first_name: 'ammado'
+  last_name: ''
+  email: 'rfusik@ammado.com'
+  facebook_username: 'ammado'
+  linkedin_username: 'company/ammado'
+  head_img: '/static/img/landing/me.jpg'
+
+# landing page
+landing:
+  home: 'Home'
+  about: 'About'
+  projects: 'Project'
+  blog: 'Blog'
+  link: 'Link'
+
+# blog index
+index:
+  home: 'Home'
+  blog: 'Blog'
+  test: 'Test'
+  live: 'Live'
+
+# google analytics
+ga:
+  id: UA-84740817-1
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

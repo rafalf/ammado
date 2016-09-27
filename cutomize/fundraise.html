@@ -1,0 +1,39 @@
+---
+layout: post
+title: fundraise
+permalink: /fundraise/
+---
+
+    <div id="ammadoFundraisingWidget"></div><script>(
+                         
+                        		 
+                         function () { var s = document.createElement('script');
+                         
+                         var srcUrl = returnData();
+                         s.src = srcUrl;
+                         s.async = true; var d = document.getElementsByTagName('script')[0]; d.parentNode.insertBefore(s, d); })();
+                         
+                         
+                         
+                         function returnData() {
+                        	 var testUrl = getParameterByName('testUrl');
+                             var entityType = getParameterByName('entityType');
+                             var entityID = getParameterByName('entityID');
+                             var campID = getParameterByName('campID');
+                             var scriptStr = 'https://www.' + testUrl + '/'+ entityType + '/' + entityID + '/fundraisingwidget/script?campaignId=' + campID;
+                             console.log(scriptStr);	 
+                        	 return scriptStr;              // test url
+                        	}
+						 
+                         function getParameterByName(name, url) {
+                        	    if (!url) url = window.location.href;
+                        	    name = name.replace(/[\[\]]/g, "\\$&");
+                        	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        	        results = regex.exec(url);
+                        	    if (!results) return null;
+                        	    if (!results[2]) return '';
+                        	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+                        	}
+                         
+                         </script>
+

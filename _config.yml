@@ -4,7 +4,7 @@
 title: "ammado widgets"
 description: "Test site for ammado widgets"
 keywords: "widgets, test"
-baseurl: "/blog"
+baseurl: "/ammado"
 #url: "/blog"
 #url: "http://127.0.0.1:4000"
 

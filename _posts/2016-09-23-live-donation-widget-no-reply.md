@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "ammado donation widget v.1 - button"
-date:   2016-09-24
+title:  "live - ammado donation widget v.1"
+date:   2016-09-23
 desc: "donation widget"
 keywords: "live, donation widget"
 categories: [Live]

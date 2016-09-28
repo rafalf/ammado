@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "ammado donation widget v.1 - test"
-date:   2016-09-24
+title:  "test - ammado donation widget v.1"
+date:   2016-09-25
 desc: "donation widget"
-keywords: "live, donation widget"
+keywords: "test, donation widget"
 categories: [Test]
 tags: [test, donation widget]
 published: true

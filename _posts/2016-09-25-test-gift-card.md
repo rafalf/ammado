@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "ammado purchase gift card widget - test"
-date:   2016-09-23
+title:  "test - ammado purchase gift card widget"
+date:   2016-09-25
 desc: "gift card widget customization"
 keywords: "test, gift card widget"
 categories: [Test]
@@ -70,5 +70,6 @@ ___
          alert('iFrame update:\nsite: ' + urlSite + '\nwidth: ' + gfwidth + '\nheight: ' + gfheight + '\npcode: ' + pcode)
 
         }
-
+        
+   
  </script>

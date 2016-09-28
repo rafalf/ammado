@@ -9,16 +9,14 @@ tags: [live, fundraising widget]
 published: true
 ---
 
-### ammado fundraising widget 
-
-Code:
+<div class="text-center article-title">
+<h2>Code:</h2>
+</div>
 
 ```
 <div id="ammadoFundraisingWidget"></div><script>(function () { var s = document.createElement('script'); s.src = 'https://www.ammado.com/company/175962/fundraisingwidget/script'; s.async = true; var d = document.getElementsByTagName('script')[0]; d.parentNode.insertBefore(s, d); })();</script>
 ```
 
-__Fundraising widget__
-
-owner url: https://www.ammado.com/company/175962
+<br><br>
 
 <div id="ammadoFundraisingWidget"></div><script>(function () { var s = document.createElement('script'); s.src = 'https://www.ammado.com/company/175962/fundraisingwidget/script'; s.async = true; var d = document.getElementsByTagName('script')[0]; d.parentNode.insertBefore(s, d); })();</script>

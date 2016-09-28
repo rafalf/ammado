@@ -9,19 +9,15 @@ tags: [live, donation widget]
 published: true
 ---
 
-### ammado donation widget v.1
-
-
-Code:
+<div class="text-center article-title">
+<h2>Code:</h2>
+</div>
 
 ```
 <div id="ammadoGivingWidget" style="margin: auto;"></div><script type="text/javascript">var s = document.createElement('script'); s.type='text/javascript'; s.async=true;s.src='https://www.ammado.com/company/175962/givingwidget/embed.js?renderTo=ammadoGivingWidget';var f = document.getElementsByTagName('script')[0]; f.parentNode.insertBefore(s, f);</script>
 
 ```
 
-__owner url:__ https://www.ammado.com/company/175962
-
-__default payment methods__: gift cards
 
 ___
 

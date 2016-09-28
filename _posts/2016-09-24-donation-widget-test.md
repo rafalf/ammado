@@ -9,8 +9,6 @@ tags: [test, donation widget]
 published: true
 ---
 
-### ammado donation widget v.1 - test
-
 ___
 
 <form name="myform" action="{{"/donate/" | prepend: site.baseurl }}" method="GET">

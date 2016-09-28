@@ -9,15 +9,15 @@ tags: [live, gift card widget]
 published: true
 ---
 
-### ammado gift card widget 
-
-Code:
+<div class="text-center article-title">
+<h2>Code:</h2>
+</div>
 
 ```
 <iframe id="production" style="border: 1px solid #dddddd;" src="https://www.ammado.com/widget/buygiftcards" width="360" height="620"></iframe>
 ```
 
-__Gift card widget__
+<br><br>
 
 <div style="text-align: center"> 
 <iframe style="border: 1px solid #dddddd; margin: 0 auto" src="https://www.ammado.com/widget/buygiftcards" width="360" height="620"></iframe>

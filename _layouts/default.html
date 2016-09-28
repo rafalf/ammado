@@ -10,13 +10,14 @@
 
 <body id="page-top" class="landing-page">
 
-	{% if page.title != 'index' %}
+  {% if page.title != 'fundraise' %}
+	
+    {% if page.title != 'index' %}
 	    {% include header.html %}
-        
-        {% if page.title != 'fundraise' %}
-            {% include carousel.html %}
-        {% endif %}
-	{% endif %}
+        {% include carousel.html %}
+	
+    {% endif %}
+  {% endif %}
 
     {{ content }}
 

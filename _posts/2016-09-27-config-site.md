@@ -12,6 +12,8 @@ permalink: /configuration/
 
 # test accounts: data populator
 
+Click on 'Remember me' to store the entity data: entity type, entity id or profile address (identifier). Next time you get to the test form you'll have the input fields populated with these values.
+
 ___
 <div class="pull-right">
 <button class="btn btn-white btn-xs" type="button" onClick="createCookies('company','acompany6')">Remember me</button>
@@ -55,11 +57,14 @@ partner code: pcTest
 ___
 
 
-# test site
+# test sites
+
+Click on 'Set this site' to set the site for testing. 
+It'll be overriden if you enter a different site name on the form.  
 
 ___
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly1.com', 7)">Remember me</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly1.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly1.com
@@ -67,7 +72,7 @@ www.ammadonightly1.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly2.com', 7)">Remember me</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly2.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly2.com
@@ -75,7 +80,7 @@ www.ammadonightly2.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly3.com', 7)">Remember me</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly3.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly3.com
@@ -83,7 +88,7 @@ www.ammadonightly3.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly4.com', 7)">Remember me</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly4.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly4.com
@@ -91,7 +96,7 @@ www.ammadonightly4.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammado.com', 7)">Remember me</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammado.com', 7)">Set this site</button>
 </div>
 
 www.ammado.com

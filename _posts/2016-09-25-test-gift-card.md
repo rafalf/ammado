@@ -67,8 +67,22 @@ ___
          document.getElementById('giving').width = gfwidth;
          document.getElementById('giving').height = gfheight;
          
-         alert('iFrame update:\nsite: ' + urlSite + '\nwidth: ' + gfwidth + '\nheight: ' + gfheight + '\npcode: ' + pcode)
+         alert('iFrame update:\nsite: ' + urlSite + '\nwidth: ' + gfwidth + '\nheight: ' + gfheight + '\npcode: ' + pcode);
+         
+         // set www cookie
+         createCookie('www', urlSite, 7);
+         console.log('www cookie set: ' + urlSite);
 
+        }
+    
+    function createCookie(name,value,days) {
+       if (days) {
+          var date = new Date();
+          date.setTime(date.getTime()+(days*24*60*60*1000));
+          var expires = "; expires="+date.toGMTString();
+           }
+       else var expires = "";
+           document.cookie = name+"="+value+expires+"; path=/";
         }
         
    

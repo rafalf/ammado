@@ -35,8 +35,13 @@ tags: [test, donation widget, v.1]
               var entityType = getParameterByName('entityType');
               var entityID = getParameterByName('entityID');
               var scriptStr = 'https://www.' + testUrl + '/'+ entityType + '/' + entityID + '/givingwidget/embed.js?renderTo=ammadoGivingWidget';
-                console.log(scriptStr);	 
-                return scriptStr;              // test url
+              console.log(scriptStr);	
+            
+              // set www cookie
+              createCookie('www', testUrl, 7);
+              console.log('www cookie set: ' + testUrl);
+            
+              return scriptStr;              // test url
                 }
 						 
         function getParameterByName(name, url) {
@@ -52,6 +57,16 @@ tags: [test, donation widget, v.1]
         function renderCode(code) {
             document.getElementById('innerCode').innerText = code;
         }
+        
+        function createCookie(name,value,days) {
+	       if (days) {
+		      var date = new Date();
+		      date.setTime(date.getTime()+(days*24*60*60*1000));
+		      var expires = "; expires="+date.toGMTString();
+	           }
+	       else var expires = "";
+	           document.cookie = name+"="+value+expires+"; path=/";
+            }
         
                          
     </script>

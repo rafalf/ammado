@@ -21,7 +21,7 @@ published: true
                 <ul class="nav navbar-nav navbar-right" id="i18_navbar">
                     <li><a class="page-scroll" href="#page-top"><span data-i18n="nav.home">{{ site.landing.home }}</span></a></li>
                     <li><a class="page-scroll" href="#about_me"><span data-i18n="nav.about_me">{{ site.landing.about }}</span></a></li>
-                    <li><a class="page-scroll" href="#blog"><span data-i18n="nav.blog">{{ site.landing.blog }}</span></a></li>
+                    <li><a class="page-scroll" href="{{ "/blog/" | prepend: site.baseurl }} "><span data-i18n="nav.blog">{{ site.landing.blog }}</span></a></li>
                     <li><a class="page-scroll" href="#link"><span data-i18n="nav.link">{{ site.landing.link }}</span></a></li>
                     <li>
                         <a class="btn btn-sm set_en"><img src="{{"/static/img/flags/United-Kingdom.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>

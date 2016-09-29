@@ -11,11 +11,11 @@ published: true
 
 ___
 
-<!--
+
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button">Site me up</button>
+<button onclick="location.href='{{"/configuration"| prepend: site.baseurl }}'" class="btn btn-white btn-xs" type="button">Configuration</button>
 </div>
--->
+
 
 <table style="width:40%; " align="center" cellpadding="10">
 <tr>

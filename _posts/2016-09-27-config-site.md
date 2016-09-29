@@ -7,6 +7,7 @@ keywords: "test"
 categories: [Test]
 tags: [test, donations, widgets, config, cookies]
 published: true
+permalink: /configuration/
 ---
 
 # test accounts: data populator

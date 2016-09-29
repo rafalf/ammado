@@ -9,6 +9,10 @@ tags: [test, fundraising widget]
 published: true
 ---
 
+
+<div class="pull-right">
+<button onclick="location.href='{{"/configuration"| prepend: site.baseurl }}'" class="btn btn-white btn-xs" type="button">Configuration</button>
+</div>
 ___
 
 <form name="myform" action="{{"/fundraise/" | prepend: site.baseurl }}" method="GET">

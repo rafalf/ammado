@@ -18,10 +18,10 @@ ___
 <br>
 
 <div class="text-center article-title">
-<h2>Select configuration:</h2>
+<h2>Choose your configuration:</h2>
 </div>
 
-<table style="width:20%; " align="center">
+<table align="center">
 
 <tr>
 <td>
@@ -40,7 +40,7 @@ ___
 
 <br>
 
-<table style="width:20%; " align="center">
+<table align="center">
 <tr>
 <td>
   <select name="selsite" id="selsite" onchange="fillformsite();">>

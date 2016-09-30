@@ -1,6 +1,6 @@
 {
   "website":{
-    "title": "Manfewer's blog"
+    "title": "eggs for food"
   },
   "nav":{
     "home": "Home",
@@ -12,7 +12,7 @@
     "link": "Link"
   },
   "about_me":{
-    "about_me": "About Company",
+    "about_me": "About Us",
     "des": "ammado is a unique online global donation and fundraising platform."
   },
   "skills":{
@@ -43,7 +43,7 @@
     "college_job": "Student"
   },
   "blog":{
-    "my_blog": "Ammado Test Blog"
+    "my_blog": "Blog"
   },
   "link":{
     "link": "Links",

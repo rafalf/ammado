@@ -15,11 +15,12 @@ published: true
 </div>
 ___
 
-<table style="width:60%; " align="center" cellpadding="10">
+<br>
+
+<table style="width:60%; " align="left">
 
 <tr>
-<td><strong>Choose your configuration: </strong>
-</td>
+<td><strong>Select entity name: </strong></td>
 <td>
   <select name="selentity" id="selentity" onchange="fillformentity();">
     <option value="" selected>Please select ...</option>
@@ -31,6 +32,14 @@ ___
     <option value="acompany6">acompany6</option>
   </select>
 </td>
+</tr>
+</table>
+
+<br>
+
+<table style="width:60%; " align="left">
+<tr>
+<td><strong>Select environment: </strong></td>
 <td>
   <select name="selsite" id="selsite" onchange="fillformsite();">>
     <option value="" selected>Please select ...</option>
@@ -44,6 +53,8 @@ ___
 </td>
 </tr>
 </table>
+
+<br>
 
 ---
 <!--

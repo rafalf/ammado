@@ -18,16 +18,16 @@ ___
 <br>
 
 <div class="text-center article-title">
-<h2>Choose your configuration:</h2>
+<h2>Step 1: Choose your configuration:</h2>
 </div>
 
 <table align="center">
 
 <tr>
 <td>
-  <select name="selentity" id="selentity" onchange="fillformentity();">
+  <select style="font-size: 21px; border: 0;" name="selentity" id="selentity" onchange="fillformentity();">
     <option value="" selected>Please select ...</option>
-    <option value="ifrc">ifrc</option>
+    <option value="ifrccomp">ifrc company</option>
     <option value="testnonprofit">test nonprofit</option>
     <option value="testcompany">test company</option>
     <option value="">-----------------</option>
@@ -43,7 +43,7 @@ ___
 <table align="center">
 <tr>
 <td>
-  <select name="selsite" id="selsite" onchange="fillformsite();">>
+  <select style="font-size: 21px; border: 0;" name="selsite" id="selsite" onchange="fillformsite();">>
     <option value="" selected>Please select ...</option>
     <option value="ammadonightly4.com">ammadonightly4</option>
     <option value="ammadonightly3.com">ammadonightly3</option>
@@ -59,34 +59,36 @@ ___
 <br>
 
 ---
-<!--
-<div class="pull-right">
-<button onclick="enable()" class="btn btn-white btn-xs" type="button">Enable editing</button>
+<div class="text-center article-title">
+<h2>Step 2: Review your configuration:</h2>
 </div>
--->
 
 <form name="myform" action="{{"/donate/" | prepend: site.baseurl }}" method="GET">
-<table style="width:40%; " align="center" cellpadding="10">
+<table style="width:40%; font-size: 16px;" align="center" cellpadding="10" >
 <tr>
-<td><strong>test site: </strong>www.</td>
+<td>Test Site:</td>
 <td><input id="testUrl" type="text" name="testUrl" value="ammado.com" onfocus="if(this.value == 'ammado.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'ammado.com'; }"></td>
 </tr>
 <tr>
-<td><strong>entity type: </strong></td>
+<td>Entity Type:</td>
 <td><input id="entityType" type="text" name="entityType" value="nonprofit" onfocus="if(this.value == 'nonprofit') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'nonprofit'; }"></td>
 </tr>
 <tr>
-<td><strong>entity id (address profile):</strong></td>
+<td>Entity Id:</td>
 <td><input id="entityID" type="text" name="entityID" value="ifrc" onfocus="if(this.value == 'ifrc') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'ifrc'; }"></td>
 </tr>
-
 </table>
 
-<div class="text-center article-title">
-<h2>
-<input id="submit" type="submit" value="Submit">
+<hr>
 
-</h2>
+<div class="text-center article-title">
+<h2>Step 3: Submit!</h2>
+</div>
+
+<div class="text-center article-title">
+<h1>
+<input id="submit" type="submit" value="Submit" style="font-family: Cursive;">
+</h1>
 </div>
 
 </form>
@@ -109,7 +111,7 @@ function fillformsite(){
 
 function returntype(entityname){
     var arr = {
-            "ifrc": ["company", "120482"],
+            "ifrccomp": ["company", "120482"],
             "testcompany": ["company","175962"],
             "testnonprofit":["nonprofit","147784"],
             "acompany6":["company","acompany6"],

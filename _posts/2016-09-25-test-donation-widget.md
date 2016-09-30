@@ -17,17 +17,20 @@ ___
 
 <br>
 
-<table style="width:60%; " align="left">
+<div class="text-center article-title">
+<h2>Select configuration:</h2>
+</div>
+
+<table style="width:20%; " align="center">
 
 <tr>
-<td><strong>Select entity name: </strong></td>
 <td>
   <select name="selentity" id="selentity" onchange="fillformentity();">
     <option value="" selected>Please select ...</option>
     <option value="ifrc">ifrc</option>
     <option value="testnonprofit">test nonprofit</option>
     <option value="testcompany">test company</option>
-    <option value="">------------</option>
+    <option value="">-----------------</option>
     <option value="acompany8">acompany8</option>
     <option value="acompany6">acompany6</option>
   </select>
@@ -37,9 +40,8 @@ ___
 
 <br>
 
-<table style="width:60%; " align="left">
+<table style="width:20%; " align="center">
 <tr>
-<td><strong>Select environment: </strong></td>
 <td>
   <select name="selsite" id="selsite" onchange="fillformsite();">>
     <option value="" selected>Please select ...</option>

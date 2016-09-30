@@ -9,10 +9,48 @@ tags: [test, donation widget]
 published: true
 ---
 
+
 <div class="pull-right">
 <button onclick="location.href='{{"/configuration"| prepend: site.baseurl }}'" class="btn btn-white btn-xs" type="button">Configuration</button>
 </div>
 ___
+
+<table style="width:60%; " align="center" cellpadding="10">
+
+<tr>
+<td><strong>Choose your configuration: </strong>
+</td>
+<td>
+  <select name="selentity" id="selentity" onchange="fillformentity();">
+    <option value="" selected>Please select ...</option>
+    <option value="ifrc">ifrc</option>
+    <option value="testnonprofit">test nonprofit</option>
+    <option value="testcompany">test company</option>
+    <option value="">------------</option>
+    <option value="acompany8">acompany8</option>
+    <option value="acompany6">acompany6</option>
+  </select>
+</td>
+<td>
+  <select name="selsite" id="selsite" onchange="fillformsite();">>
+    <option value="" selected>Please select ...</option>
+    <option value="ammadonightly4.com">ammadonightly4</option>
+    <option value="ammadonightly3.com">ammadonightly3</option>
+    <option value="ammadonightly2.com">ammadonightly2</option>
+    <option value="ammadonightly1.com">ammadonightly1</option>
+    <option value="qammado.com">qammado</option>
+    <option value="ammado.com">ammado</option>
+  </select>
+</td>
+</tr>
+</table>
+
+---
+<!--
+<div class="pull-right">
+<button onclick="enable()" class="btn btn-white btn-xs" type="button">Enable editing</button>
+</div>
+-->
 
 <form name="myform" action="{{"/donate/" | prepend: site.baseurl }}" method="GET">
 <table style="width:40%; " align="center" cellpadding="10">
@@ -39,3 +77,34 @@ ___
 </div>
 
 </form>
+
+
+<script>
+function fillformentity(){
+    var entityid = document.getElementById("selentity").value;
+    if (entityid) {
+        var entitydata = returntype(entityid);
+        document.getElementById("entityType").value= entitydata[0];
+        document.getElementById("entityID").value=entitydata[1];
+        }
+    }
+
+function fillformsite(){
+    var site = document.getElementById("selsite").value;
+    document.getElementById("testUrl").value= site;
+    }
+
+function returntype(entityname){
+    var arr = {
+            "ifrc": ["company", "120482"],
+            "testcompany": ["company","175962"],
+            "testnonprofit":["nonprofit","147784"],
+            "acompany6":["company","acompany6"],
+            "acompany8":["company","acompany8"]
+              };
+    return arr[entityname];
+    }
+</script>
+
+
+                                    

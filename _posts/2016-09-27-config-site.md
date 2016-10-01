@@ -64,7 +64,7 @@ It'll be overriden if you enter a different site name on the form.
 
 ___
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly1.com', 7)">Set this site</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('testUrl','ammadonightly1.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly1.com
@@ -72,7 +72,7 @@ www.ammadonightly1.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly2.com', 7)">Set this site</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('testUrl','ammadonightly2.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly2.com
@@ -80,7 +80,7 @@ www.ammadonightly2.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly3.com', 7)">Set this site</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('testUrl','ammadonightly3.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly3.com
@@ -88,7 +88,7 @@ www.ammadonightly3.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammadonightly4.com', 7)">Set this site</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('testUrl','ammadonightly4.com', 7)">Set this site</button>
 </div>
 
 www.ammadonightly4.com
@@ -96,7 +96,7 @@ www.ammadonightly4.com
 ---
 
 <div class="pull-right">
-<button class="btn btn-white btn-xs" type="button" onClick="createCookie('www','ammado.com', 7)">Set this site</button>
+<button class="btn btn-white btn-xs" type="button" onClick="createCookie('testUrl','ammado.com', 7)">Set this site</button>
 </div>
 
 www.ammado.com
@@ -109,8 +109,8 @@ www.ammado.com
 <script>
 
 function createCookies(entype, entid){
-    createCookie('entype', entype, 7)
-    createCookie('entid', entid, 7)
+    createCookie('entityType', entype, 7)
+    createCookie('entityID', entid, 7)
     }
     
 function createCookie(name,value,days) {

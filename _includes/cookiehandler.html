@@ -1,46 +1,62 @@
 
 <script>
-     function readCookie(name) {
-	       var nameEQ = name + "=";
-	       var ca = document.cookie.split(';');
-	       for(var i=0;i < ca.length;i++) {
-		      var c = ca[i];
-		      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-	           }
-	       return null;
+    
+(function() {
+
+    var config = ['entityType', 'entityID', 'testUrl', 'campID'];
+
+    for (var i = 0, len = config.length; i < len; i++) {
+        var x = readCookie(config[i]);
+        if (x) {
+             if (document.getElementById(config[i])){
+                document.getElementById(config[i]).value = x; 
+                }   
             }
+        };
+  })();
     
-        (function() {
     
-            var x = readCookie('entype');
-            if (x) {
-	            //   alert(x);
-                if (document.getElementById('entityType')){
-                   document.getElementById('entityType').value = x; 
-                }
-                
-	               }
-            
-            var y = readCookie('entid');
-            if (y) {
-	            //   alert(y);
-                if (document.getElementById('entityID')){
-                    document.getElementById('entityID').value = y;
-                }
-                   }
-            
-            var y = readCookie('www');
-            if (y) {
-	            //   alert(y);
-                if (document.getElementById('testUrl')){
-                    document.getElementById('testUrl').value = y;
-                }
-                   }
-            
-                   })();
     
-            
+function readCookie(name) {
+   var nameEQ = name + "=";
+   var ca = document.cookie.split(';');
+   for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+       }
+   return null;
+    }
+
+function deleteCookies() {
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+}
+    
+
+function fillformentity(){
+    var entityid = document.getElementById("selentity").value;
+    if (entityid) {
+        var entitydata = returntype(entityid);
+        document.getElementById("entityType").value= entitydata[0];
+        document.getElementById("entityID").value=entitydata[1];
+        }
+    }
+
+function fillformsite(){
+    var site = document.getElementById("selsite").value;
+    document.getElementById("testUrl").value= site;
+    }
+
+function returntype(entityname){
+    var arr = {
+            "ifrccomp": ["company", "120482"],
+            "testcompany": ["company","175962"],
+            "testnonprofit":["nonprofit","147784"],
+            "acompany6":["company","acompany6"],
+            "acompany8":["company","acompany8"]
+              };
+    return arr[entityname];
+    }
 </script>
 
  

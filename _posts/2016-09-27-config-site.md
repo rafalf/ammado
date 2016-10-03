@@ -34,7 +34,9 @@ giving widget skin name: burgundy
 
 __acompany8:__
 
-giving widget whitelist: 22
+giving widget whitelist: 22 (ac110 delisted)
+
+giving widget skin name: burnt-umber
 
 ___
 <div class="pull-right">
@@ -44,6 +46,8 @@ ___
 __acompany10:__
 
 giving widget whitelist: France, All categories
+
+giving widget skin name: graphite-gray
 
 ___
 <div class="pull-right">

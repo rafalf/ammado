@@ -1,8 +1,8 @@
 ### ammado widgets test site
 
-[Here you can find all production widgets](https://rafalf.github.io/blog/live/)
+[Here you can find all production widgets](https://rafalf.github.io/ammado/live/)
 and 
-[Here you can find all test widgets](https://rafalf.github.io/blog/test)
+[Here you can find all test widgets](https://rafalf.github.io/ammado/test/)
 
 In order to use the test widgets, the forms need to be filled in:
 

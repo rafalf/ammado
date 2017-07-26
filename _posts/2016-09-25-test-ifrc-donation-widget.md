@@ -1,6 +1,6 @@
 ---
 layout: post
-title: test - ifrc - ammado donation widget v.1
+title: test - ifrc - ammado donation widget
 date: 2016-09-25
 desc: "donation widget"
 keywords: "test, donation widget"

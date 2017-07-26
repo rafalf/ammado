@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "live - ammado donation widget v.1"
+title:  "live - ammado donation widget"
 date:   2016-09-23
 desc: "donation widget"
 keywords: "live, donation widget"

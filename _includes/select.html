@@ -1,6 +1,6 @@
-{% if page.title == 'test - ammado donation widget v.1'  or 
+{% if page.title == 'test - ammado donation widget'  or 
       page.title == 'test - ammado fundraising widget' or 
-      page.title == 'test - ifrc - ammado donation widget v.1'%}
+      page.title == 'test - ifrc - ammado donation widget'%}
 
 <!-- configuration button -->
 <hr>
@@ -65,11 +65,11 @@
 <h2>Review your configuration</h2>
 </div>
 
-{% if page.title == 'test - ammado donation widget v.1' %}
+{% if page.title == 'test - ammado donation widget' %}
     <form name="myform" action="{{"/donate/" | prepend: site.baseurl }}" method="GET">
 {% endif %}
         
-{% if page.title == 'test - ifrc - ammado donation widget v.1' %}
+{% if page.title == 'test - ifrc - ammado donation widget' %}
     <form name="myform" action="http://apitests.ammado.local/ifrc/index.html" method="GET">
 {% endif %}
 

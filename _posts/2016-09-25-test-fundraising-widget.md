@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  test - ammado fundraising widget
+title:  "test - ammado fundraising widget"
 date:   2016-09-25
 desc: "fundraising widget test site"
 keywords: "test, fundraising widget"

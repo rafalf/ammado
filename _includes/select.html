@@ -1,6 +1,7 @@
 {% if page.title == 'test - ammado donation widget'  or 
       page.title == 'test - ammado fundraising widget' or 
-      page.title == 'test - ifrc - ammado donation widget'%}
+      page.title == 'test - ifrc - ammado donation widget' or
+      page.title == 'test - ammado donation widget - an image as a button' %}
 
 <!-- configuration button -->
 <hr>
@@ -67,6 +68,10 @@
 
 {% if page.title == 'test - ammado donation widget' %}
     <form name="myform" action="{{"/donate/" | prepend: site.baseurl }}" method="GET">
+{% endif %}
+        
+{% if page.title == 'test - ammado donation widget - an image as a button' %}
+    <form name="myform" action="{{"/donatebtn/" | prepend: site.baseurl }}" method="GET">
 {% endif %}
         
 {% if page.title == 'test - ifrc - ammado donation widget' %}

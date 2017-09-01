@@ -134,7 +134,8 @@ function loadButton() {
 
      document.getElementById('placementBtn').href = fullurlSite;
 
-     alert('Button href update:\nsite: ' + urlSite + '\nfund id: ' + fundriaserID + '\nplacement: ' + placement);
+     alert('Button href update:\nsite: ' + urlSite + '\nfundraiser id: ' + fundriaserID + '\nplacement: ' + placement + 
+            '\nhref: ' + fullurlSite);
 
      // set www cookie
      createCookie('www', urlSite, 7);

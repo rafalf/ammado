@@ -48,7 +48,7 @@ ___
 ___
     
 <div id="ammadoCustomButton">
-<a class="donateButton" id="placementBtn" href="" target="_blank">Submit! and then Donate =====>
+<a class="donateButton" id="placementBtn" href="https://www.ammadonightly4.com/donate?1331&placementUrl=www.digitalliveaid.org" target="_blank">Submitted? then click on Donate btn ==>
 <img id="ammadoDonateButton" border="0" src="https://github.com/rafalf/ammado/blob/master/static/img/blog/donate_322.png?raw=true" width="150" height="100" data-original-width="300" data-original-height="250" />
 </a>
 </div>
@@ -134,7 +134,7 @@ function loadButton() {
 
      document.getElementById('placementBtn').href = fullurlSite;
 
-     alert('iFrame update:\nsite: ' + urlSite + '\nfund id: ' + fundriaserID + '\nplacement: ' + placement);
+     alert('Button href update:\nsite: ' + urlSite + '\nfund id: ' + fundriaserID + '\nplacement: ' + placement);
 
      // set www cookie
      createCookie('www', urlSite, 7);
